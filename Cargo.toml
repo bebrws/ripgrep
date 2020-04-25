@@ -28,6 +28,11 @@ bench = false
 path = "crates/core/main.rs"
 name = "rg"
 
+[lib]
+name = "librg"
+path = "crates/core/mainios.rs"
+crate-type = ["staticlib"]
+
 [[test]]
 name = "integration"
 path = "tests/tests.rs"
